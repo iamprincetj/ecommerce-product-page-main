@@ -143,7 +143,6 @@
 
 .btn-container .cart-btn:disabled {
   cursor: not-allowed;
-  opacity: 0.3;
 }
 
 .btn-container .cart-btn:hover,
