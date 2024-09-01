@@ -1,6 +1,3 @@
-import ShoppingCartOutlined from "@mui/icons-material/ShoppingCartOutlined";
-import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import NavigatePrevIcon from "@mui/icons-material/NavigateBefore";
 import { useRef, useState } from "react";
 import "../assets/css/Main.css";
 import { useRefDispatch } from "./RefContext";

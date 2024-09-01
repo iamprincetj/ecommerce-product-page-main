@@ -37,8 +37,9 @@
   font-weight: 900;
 }
 
-.main-container .image-container .icon-container button:hover {
-  color: hsl(26, 100%, 55%);
+.main-container .image-container .icon-container button:hover > img {
+  filter: brightness(100%) saturate(100%) invert(50%) sepia(100%) saturate(500%)
+    hue-rotate(10deg) brightness(100%) contrast(100%);
 }
 
 .main-container .image-container img {
@@ -116,7 +117,6 @@
 
 .btn-container .incre-cart .btn-decre,
 .btn-container .incre-cart .btn-incre {
-  color: hsl(26, 100%, 55%);
   font-weight: 800;
   font-size: 1.6rem;
   display: inline-block;
@@ -188,7 +188,8 @@
     border-radius: 10px;
   }
 
-  .main-container .img-list-container img:hover {
+  .main-container .img-list-container img:hover,
+  .modal1-content .img-list-container img:hover {
     opacity: 0.5;
     cursor: pointer;
   }
@@ -299,11 +300,11 @@
   main .modal1 .modal1-content {
     margin: 5em 0;
     width: 35%;
-    z-index: 1000;
+    z-index: 10000000000;
   }
 
   .modal1 .modal1-content .modal-cancel {
-    color: #fff;
+    fill: #fff;
     font-size: 2em;
     font-weight: 700;
     margin-bottom: 1em;
@@ -314,7 +315,8 @@
 
   .modal1 .modal1-content .modal-cancel:hover {
     cursor: pointer;
-    color: hsl(26, 100%, 55%);
+    filter: brightness(100%) saturate(100%) invert(50%) sepia(100%)
+      saturate(500%) hue-rotate(10deg) brightness(100%) contrast(100%);
   }
 
   .modal1 .modal1-content .icon-container {
@@ -336,12 +338,16 @@
     line-height: 50px;
   }
 
-  .modal1 .modal1-content button:hover {
-    color: hsl(26, 100%, 55%);
+  .modal1 .modal1-content button:hover > img {
+    filter: brightness(100%) saturate(100%) invert(50%) sepia(100%)
+      saturate(500%) hue-rotate(10deg) brightness(100%) contrast(100%);
   }
 
   .modal1 .modal1-content .image-container img {
     border-radius: 10px;
+  }
+
+  .modal1 .modal1-content .image-container img:hover {
   }
 
   .modal1 .modal1-content .image-container .img-list-container {
