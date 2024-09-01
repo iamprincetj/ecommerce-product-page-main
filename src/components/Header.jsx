@@ -1,6 +1,3 @@
-import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import ShoppingCartOutlined from "@mui/icons-material/ShoppingCartOutlined";
-import CloseIcon from "@mui/icons-material/Close";
 import "../assets/css/Header.css";
 import Cart from "./Cart";
 import { useCallback, useEffect, useState } from "react";
@@ -28,8 +25,9 @@ const Header = () => {
       <header>
         <nav>
           <div className='navbar-brand-container'>
-            <h1 className='navbar-brands'>sneakers</h1>
-            <MenuOutlinedIcon
+            <img src='/images/logo.svg' />
+            <img
+              src='/images/icon-menu.svg'
               className='navbar-menu-icon'
               data-bs-toggle='offcanvas'
               data-bs-target='#demo'
@@ -54,7 +52,8 @@ const Header = () => {
           </div>
           <div className='navbar-profile-container'>
             <span className='shopping-cart-container'>
-              <ShoppingCartOutlined
+              <img
+                src='/images/icon-cart.svg'
                 className='shopping-cart'
                 onClick={() => {
                   displayCart
@@ -68,7 +67,7 @@ const Header = () => {
             </span>
             <img
               className='profile-pic'
-              src='src/assets/images/image-avatar.png'
+              src='/images/image-avatar.png'
               alt='user profile picture'
             />
             {console.log(cartData)}
@@ -83,8 +82,7 @@ const Header = () => {
 
       <div className='offcanvas offcanvas-start' id='demo'>
         <div className='offcanvas-header'>
-          <span></span>
-          <CloseIcon className='text-reset' data-bs-dismiss='offcanvas' />
+          <img src='/images/icon-close.svg' data-bs-dismiss='offcanvas' />
         </div>
         <div className='offcanvas-body'>
           <ul>

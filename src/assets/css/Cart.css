@@ -62,6 +62,11 @@
   color: #000;
 }
 
+.cart-content img.delete-icon {
+  border: none;
+  width: 10%;
+}
+
 .cart-content-container .btn-checkout {
   border: none;
   background-color: hsl(26, 100%, 55%);

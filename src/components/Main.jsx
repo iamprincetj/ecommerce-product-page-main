@@ -10,7 +10,7 @@ const Main = () => {
   const [displayModal, setDisplayModal] = useState("none");
   const [itemCount, setItemCount] = useState(0);
   const [modalImg, setModalImg] = useState("");
-  const showedImg = `src/assets/images/image-product-${showedImgTag}.jpg`;
+  const showedImg = `/images/image-product-${showedImgTag}.jpg`;
   const modalContentRef = useRef();
   const dispatch = useRefDispatch();
 
@@ -59,7 +59,7 @@ const Main = () => {
 
           <div className='img-list-container'>
             <img
-              src={`src/assets/images/image-product-1-thumbnail.jpg`}
+              src={`/images/image-product-1-thumbnail.jpg`}
               alt='product'
               className={
                 showedImgTag == 1 ? "img-fluid active-img" : "img-fluid"
@@ -67,7 +67,7 @@ const Main = () => {
               onClick={() => setShowedImgTag(1)}
             />
             <img
-              src={`src/assets/images/image-product-2-thumbnail.jpg`}
+              src={`/images/image-product-2-thumbnail.jpg`}
               alt='product'
               className={
                 showedImgTag == 2 ? "img-fluid active-img" : "img-fluid"
@@ -75,7 +75,7 @@ const Main = () => {
               onClick={() => setShowedImgTag(2)}
             />
             <img
-              src={`src/assets/images/image-product-3-thumbnail.jpg`}
+              src={`/images/image-product-3-thumbnail.jpg`}
               alt='product'
               className={
                 showedImgTag == 3 ? "img-fluid active-img" : "img-fluid"
@@ -83,7 +83,7 @@ const Main = () => {
               onClick={() => setShowedImgTag(3)}
             />
             <img
-              src={`src/assets/images/image-product-4-thumbnail.jpg`}
+              src={`/images/image-product-4-thumbnail.jpg`}
               alt='product'
               className={
                 showedImgTag == 4 ? "img-fluid active-img" : "img-fluid"
@@ -173,11 +173,12 @@ const Main = () => {
                 onClick={changeImgNext}
               >
                 <NavigateNextIcon className='icon' />
+                <img src='/images/icon-next.svg' />
               </button>
             </div>
             <div className='img-list-container'>
               <img
-                src={`src/assets/images/image-product-1-thumbnail.jpg`}
+                src={`/images/image-product-1-thumbnail.jpg`}
                 alt='product'
                 className={
                   showedImgTag == 1 ? "img-fluid active-img" : "img-fluid"
@@ -185,7 +186,7 @@ const Main = () => {
                 onClick={() => setShowedImgTag(1)}
               />
               <img
-                src={`src/assets/images/image-product-2-thumbnail.jpg`}
+                src={`/images/image-product-2-thumbnail.jpg`}
                 alt='product'
                 className={
                   showedImgTag == 2 ? "img-fluid active-img" : "img-fluid"
@@ -194,7 +195,7 @@ const Main = () => {
               />
 
               <img
-                src={`src/assets/images/image-product-3-thumbnail.jpg`}
+                src={`/images/image-product-3-thumbnail.jpg`}
                 alt='product'
                 className={
                   showedImgTag == 3 ? "img-fluid active-img" : "img-fluid"
@@ -203,7 +204,7 @@ const Main = () => {
               />
 
               <img
-                src={`src/assets/images/image-product-4-thumbnail.jpg`}
+                src={`/images/image-product-4-thumbnail.jpg`}
                 alt='product'
                 className={
                   showedImgTag == 4 ? "img-fluid active-img" : "img-fluid"

@@ -35,6 +35,8 @@ Users should be able to:
 
 ![mobile view](mobile.png)
 
+## Desktop
+
 ![desktop view](desktop.png)
 
 ### Links
