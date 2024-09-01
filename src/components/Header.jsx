@@ -70,7 +70,6 @@ const Header = () => {
               src='/images/image-avatar.png'
               alt='user profile picture'
             />
-            {console.log(cartData)}
             <Cart
               style={{ display: displayCart }}
               setDisplayCart={memoSetDisplayCart}

@@ -20,6 +20,11 @@
   margin: 0 auto;
 }
 
+.icon-container button img.icon,
+.modal1-content .icon-container button img.icon {
+  width: 50%;
+}
+
 .main-container .image-container .icon-container button:last-child {
   float: inline-end;
 }
@@ -133,7 +138,7 @@
   font-size: 1rem;
   font-weight: 800;
   border: none;
-  line-height: normal;
+  line-height: 10px;
 }
 
 .btn-container .cart-btn:disabled {
@@ -298,12 +303,13 @@
   }
 
   .modal1 .modal1-content .modal-cancel {
-    display: block;
-    width: 100%;
     color: #fff;
     font-size: 2em;
     font-weight: 700;
-    text-align: end;
+    margin-bottom: 1em;
+    float: right;
+    position: relative;
+    z-index: 10000;
   }
 
   .modal1 .modal1-content .modal-cancel:hover {
@@ -327,6 +333,7 @@
     width: 40px;
     height: 40px;
     border-radius: 100%;
+    line-height: 50px;
   }
 
   .modal1 .modal1-content button:hover {

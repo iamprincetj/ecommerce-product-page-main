@@ -41,10 +41,10 @@ const Main = () => {
         <div className='image-container'>
           <div className='icon-container'>
             <button type='button' className='prev-icon' onClick={changeImgPrev}>
-              <NavigatePrevIcon className='icon' />
+              <img src='/images/icon-previous.svg' className='icon' />
             </button>
             <button type='button' className='next-icon' onClick={changeImgNext}>
-              <NavigateNextIcon className='icon' />
+              <img src='/images/icon-next.svg' className='icon' />
             </button>
           </div>
           <img
@@ -112,14 +112,14 @@ const Main = () => {
                 className='btn-decre'
                 onClick={() => setItemCount(itemCount > 1 ? itemCount - 1 : 0)}
               >
-                -
+                <img src='/images/icon-minus.svg' />
               </span>{" "}
               <span>{itemCount}</span>{" "}
               <span
                 className='btn-incre'
                 onClick={() => setItemCount(itemCount + 1)}
               >
-                +
+                <img src='/images/icon-plus.svg' />
               </span>
             </button>
             <button
@@ -128,8 +128,11 @@ const Main = () => {
               disabled={itemCount > 0 ? false : true}
               onClick={addToCart}
             >
-              <ShoppingCartOutlined style={{ marginRight: "0.5em" }} /> Add to
-              cart
+              <img
+                src='/images/icon-cart.svg'
+                style={{ marginRight: "0.5em" }}
+              />{" "}
+              Add to cart
             </button>
           </div>
         </div>
@@ -147,12 +150,11 @@ const Main = () => {
         }}
       >
         <div className='modal1-content' ref={modalContentRef}>
-          <span
+          <img
             className='modal-cancel'
+            src='/images/icon-close.svg'
             onClick={() => setDisplayModal("none")}
-          >
-            &times;
-          </span>{" "}
+          />
           <div className='image-container'>
             <img
               src={modalImg.slice(0, -5) + `${showedImgTag}.jpg`}
@@ -165,15 +167,14 @@ const Main = () => {
                 className='prev-icon'
                 onClick={changeImgPrev}
               >
-                <NavigatePrevIcon className='icon' />{" "}
+                <img src='/images/icon-previous.svg' className='icon' />
               </button>
               <button
                 type='button'
                 className='next-icon'
                 onClick={changeImgNext}
               >
-                <NavigateNextIcon className='icon' />
-                <img src='/images/icon-next.svg' />
+                <img src='/images/icon-next.svg' className='icon' />
               </button>
             </div>
             <div className='img-list-container'>

@@ -1,10 +1,8 @@
 import "../assets/css/Cart.css";
 import { memo, useEffect, useRef, useState } from "react";
-import DeleteIcon from "@mui/icons-material/Delete";
 import { useRefDispatch } from "./RefContext";
 
 const Cart = memo(({ style, setDisplayCart, cartData }) => {
-  console.log(cartData);
   const [cartItem, setCartItem] = useState(
     cartData || JSON.parse(localStorage.getItem("cartData"))
   );
@@ -34,7 +32,6 @@ const Cart = memo(({ style, setDisplayCart, cartData }) => {
         {!cartItem ? (
           <>
             <h6>Your cart is empty</h6>
-            <img src='/images/icon-menu.svg' />
           </>
         ) : (
           <>
