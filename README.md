@@ -94,7 +94,7 @@ console.log(headerRef.current) // logs the h1 to console
 
 ### Continued development
 
-I want to cotinue with working with frontend and getting better and better with CSS mostly.
+I want to continue with working with frontend and getting better and better with CSS mostly.
 
 ### Useful resources
 
