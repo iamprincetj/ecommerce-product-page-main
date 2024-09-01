@@ -101,5 +101,5 @@ I want to cotinue with working with frontend and getting better and better with 
 ## Author
 
 - Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@iamprincetj](https://www.frontendmentor.io/profile/iamprincetj)
+- Twitter - [@Iam_princetj](https://x.com/Iam_princetj)
