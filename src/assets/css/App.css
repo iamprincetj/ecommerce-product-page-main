@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("../fonts/Kumbh_Sans/KumbhSans-VariableFont_YOPQ\,wght.ttf")
+    format("truetype");
+}
+
+#root {
+  font-size: 14px;
+}
+
+footer {
+  height: 2em;
+  margin-top: 1em;
+}
+
+.attribution {
+  font-size: 1em;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

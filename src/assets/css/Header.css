@@ -1,0 +1,155 @@
+header {
+  margin: 0 auto;
+  padding: 0;
+  width: 95%;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#demo {
+  width: 70%;
+  max-width: 400px;
+}
+
+#demo .text-reset {
+  position: absolute;
+  font-size: 1.2rem;
+  top: 0.8em;
+  left: 0.8em;
+  font-weight: 900;
+}
+
+.offcanvas-body ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.offcanvas-body ul li {
+  padding: 0.5em 0;
+}
+
+.offcanvas-body ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+header .navbar-brand-container {
+  display: flex;
+  align-items: center;
+}
+
+header .navbar-brands {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+header nav ul {
+  display: none;
+  margin: 0;
+}
+
+header .navbar-menu-icon {
+  order: -1;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-right: 0.5em;
+}
+
+header .navbar-profile-container .shopping-cart-container {
+  position: relative;
+}
+
+header .navbar-profile-container .shopping-cart-container span {
+  border: none;
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  background-color: hsl(26, 100%, 55%);
+  text-align: center;
+  color: white;
+  border-radius: 100%;
+  line-height: 15px;
+  top: -0.5em;
+  right: -0.5em;
+  font-size: 0.8em;
+}
+
+header .navbar-profile-container .shopping-cart {
+  font-size: 1.7em;
+  cursor: pointer;
+}
+
+header .navbar-profile-container .shopping-cart:hover ~ .cart-pop-over {
+  display: block;
+}
+
+header .navbar-profile-container .profile-pic {
+  width: 30px;
+  margin-left: 1em;
+}
+
+header .navbar-profile-container .profile-pic:hover {
+  cursor: pointer;
+  border: 2px solid hsl(26, 100%, 55%);
+  border-radius: 50%;
+}
+
+/** MEDIA QUERIES **/
+
+@media (min-width: 992px) {
+  header {
+    border-bottom: 1px solid #878686;
+  }
+  header .navbar-menu-icon {
+    font-size: 25em;
+  }
+
+  header .navbar-brands {
+    font-size: 2.5em;
+  }
+
+  header .navbar-profile-container .shopping-cart {
+    font-size: 2.5em;
+  }
+
+  header .navbar-profile-container .profile-pic {
+    width: 35px;
+  }
+
+  header .navbar-menu-icon {
+    display: none;
+  }
+
+  /** NAVBAR LIST ITEMS **/
+  header nav ul {
+    display: flex;
+    margin: 0;
+  }
+
+  header nav ul li {
+    margin: 0 1em;
+    list-style-type: none;
+    padding: 2em 0.2em;
+  }
+
+  header nav ul li:hover {
+    border-bottom: 3.5px solid hsl(26, 100%, 55%);
+  }
+  header nav ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: #878686;
+    font-size: 1.2em;
+  }
+
+  header .navbar-profile-container .cart-pop-over {
+    left: auto;
+    right: 3em;
+  }
+}
