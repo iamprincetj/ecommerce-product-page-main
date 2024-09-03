@@ -106,9 +106,9 @@ const Main = () => {
             the weather can offer.
           </p>
           <div className='price-container'>
-            <h4>
+            <h2>
               $125.00 <span>50%</span>
-            </h4>
+            </h2>
             <p>$250.00</p>
           </div>
           <div className='btn-container'>
