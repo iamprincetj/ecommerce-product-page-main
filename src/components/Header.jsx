@@ -25,12 +25,13 @@ const Header = () => {
       <header>
         <nav>
           <div className='navbar-brand-container'>
-            <img src='/images/logo.svg' />
+            <img src='/images/logo.svg' alt='site logo' />
             <img
               src='/images/icon-menu.svg'
               className='navbar-menu-icon'
               data-bs-toggle='offcanvas'
               data-bs-target='#demo'
+              alt='menu icon'
             />
             <ul>
               <li>
@@ -60,6 +61,7 @@ const Header = () => {
                     ? memoSetDisplayCart("")
                     : memoSetDisplayCart("none");
                 }}
+                alt='shopping cart icon'
               />
               {cartData && cartData.itemCount > 0 && (
                 <span>{cartData?.itemCount}</span>
@@ -81,7 +83,11 @@ const Header = () => {
 
       <div className='offcanvas offcanvas-start' id='demo'>
         <div className='offcanvas-header'>
-          <img src='/images/icon-close.svg' data-bs-dismiss='offcanvas' />
+          <img
+            src='/images/icon-close.svg'
+            data-bs-dismiss='offcanvas'
+            alt='close icon'
+          />
         </div>
         <div className='offcanvas-body'>
           <ul>

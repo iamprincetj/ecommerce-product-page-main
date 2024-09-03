@@ -38,10 +38,18 @@ const Main = () => {
         <div className='image-container'>
           <div className='icon-container'>
             <button type='button' className='prev-icon' onClick={changeImgPrev}>
-              <img src='/images/icon-previous.svg' className='icon' />
+              <img
+                src='/images/icon-previous.svg'
+                className='icon'
+                alt='previous icon'
+              />
             </button>
             <button type='button' className='next-icon' onClick={changeImgNext}>
-              <img src='/images/icon-next.svg' className='icon' />
+              <img
+                src='/images/icon-next.svg'
+                className='icon'
+                alt='next icon'
+              />
             </button>
           </div>
           <img
@@ -109,14 +117,14 @@ const Main = () => {
                 className='btn-decre'
                 onClick={() => setItemCount(itemCount > 1 ? itemCount - 1 : 0)}
               >
-                <img src='/images/icon-minus.svg' />
+                <img src='/images/icon-minus.svg' alt='minus icon' />
               </span>{" "}
               <span>{itemCount}</span>{" "}
               <span
                 className='btn-incre'
                 onClick={() => setItemCount(itemCount + 1)}
               >
-                <img src='/images/icon-plus.svg' />
+                <img src='/images/icon-plus.svg' alt='plus icon' />
               </span>
             </button>
             <button
@@ -128,6 +136,7 @@ const Main = () => {
               <img
                 src='/images/icon-cart.svg'
                 style={{ marginRight: "0.5em" }}
+                alt='cart icon'
               />{" "}
               Add to cart
             </button>
@@ -151,6 +160,7 @@ const Main = () => {
             className='modal-cancel'
             src='/images/icon-close.svg'
             onClick={() => setDisplayModal("none")}
+            alt='cancel icon'
           />
           <div className='image-container'>
             <img
@@ -164,14 +174,22 @@ const Main = () => {
                 className='prev-icon'
                 onClick={changeImgPrev}
               >
-                <img src='/images/icon-previous.svg' className='icon' />
+                <img
+                  src='/images/icon-previous.svg'
+                  className='icon'
+                  alt='previous icon'
+                />
               </button>
               <button
                 type='button'
                 className='next-icon'
                 onClick={changeImgNext}
               >
-                <img src='/images/icon-next.svg' className='icon' />
+                <img
+                  src='/images/icon-next.svg'
+                  className='icon'
+                  alt='next icon'
+                />
               </button>
             </div>
             <div className='img-list-container'>

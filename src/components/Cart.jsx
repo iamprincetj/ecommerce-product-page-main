@@ -36,7 +36,11 @@ const Cart = memo(({ style, setDisplayCart, cartData }) => {
         ) : (
           <>
             <div className='cart-content'>
-              <img src={cartItem.image} className='img-fluid' />
+              <img
+                src={cartItem.image}
+                className='img-fluid'
+                alt='item image'
+              />
               <p>
                 {" "}
                 {cartItem.name} ${cartItem.price}.00 x {cartItem.itemCount}{" "}
@@ -51,6 +55,7 @@ const Cart = memo(({ style, setDisplayCart, cartData }) => {
               </p>
               <img
                 src='/images/icon-delete.svg'
+                alt='delete icon'
                 className='delete-icon'
                 onClick={() => {
                   localStorage.removeItem("cartData");
